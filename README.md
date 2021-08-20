@@ -1,4 +1,3 @@
-Initial Commit
 UIKit
 CoreLocation 
 CoreData

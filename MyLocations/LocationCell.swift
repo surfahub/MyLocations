@@ -54,7 +54,6 @@ class LocationCell: UITableViewCell {
       }else {
         return UIImage(named: "No Photo")!
       }
-      return UIImage()
     }
     
 }

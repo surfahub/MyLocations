@@ -476,7 +476,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcz-0r-CfL">
-                                            <rect key="frame" x="92" y="37" width="267" height="17"/>
+                                            <rect key="frame" x="306" y="37" width="53" height="17"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="iLB-Zw-sA3"/>
                                             </constraints>
@@ -496,7 +496,7 @@
                                         <constraint firstAttribute="trailing" secondItem="dcz-0r-CfL" secondAttribute="trailing" constant="16" id="9Mw-2E-c3h"/>
                                         <constraint firstItem="gHr-DI-ZgX" firstAttribute="leading" secondItem="grt-xp-OTa" secondAttribute="leading" constant="16" id="Cel-EY-N4Z"/>
                                         <constraint firstItem="dcz-0r-CfL" firstAttribute="top" secondItem="tdz-Ni-61q" secondAttribute="bottom" constant="5" id="HKK-c1-e2l"/>
-                                        <constraint firstItem="dcz-0r-CfL" firstAttribute="leading" secondItem="grt-xp-OTa" secondAttribute="leadingMargin" constant="76" id="ahd-4S-NyA"/>
+                                        <constraint firstItem="dcz-0r-CfL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="grt-xp-OTa" secondAttribute="leadingMargin" constant="76" id="ahd-4S-NyA"/>
                                         <constraint firstItem="gHr-DI-ZgX" firstAttribute="top" secondItem="grt-xp-OTa" secondAttribute="top" constant="6" id="c1S-PS-i3k"/>
                                         <constraint firstItem="tdz-Ni-61q" firstAttribute="top" secondItem="grt-xp-OTa" secondAttribute="topMargin" id="gIQ-9C-8ul"/>
                                         <constraint firstAttribute="bottom" secondItem="gHr-DI-ZgX" secondAttribute="bottom" constant="6" id="hob-oc-sbD"/>

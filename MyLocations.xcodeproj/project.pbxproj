@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5622688D26D0A66E00FFCEF3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5622688C26D0A66E00FFCEF3 /* README.md */; };
 		56966A7226C764FC006A6FB1 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56966A7126C764FC006A6FB1 /* LocationDetailsViewController.swift */; };
 		56966A7426C797F4006A6FB1 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56966A7326C797F4006A6FB1 /* CategoryPickerViewController.swift */; };
 		56966A9626C88CBA006A6FB1 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56966A9526C88CBA006A6FB1 /* HudView.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5622688C26D0A66E00FFCEF3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		56966A7126C764FC006A6FB1 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		56966A7326C797F4006A6FB1 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		56966A9526C88CBA006A6FB1 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		56EB83C626BE3A67001453A7 = {
 			isa = PBXGroup;
 			children = (
+				5622688C26D0A66E00FFCEF3 /* README.md */,
 				56966A9926C8C4A7006A6FB1 /* Location+CoreDataClass.swift */,
 				56966A9A26C8C4A7006A6FB1 /* Location+CoreDataProperties.swift */,
 				56EB83D126BE3A67001453A7 /* MyLocations */,
@@ -162,6 +165,7 @@
 			files = (
 				56EB83E226BE3A6A001453A7 /* LaunchScreen.storyboard in Resources */,
 				56EB83DF26BE3A6A001453A7 /* Assets.xcassets in Resources */,
+				5622688D26D0A66E00FFCEF3 /* README.md in Resources */,
 				56EB83DA26BE3A67001453A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

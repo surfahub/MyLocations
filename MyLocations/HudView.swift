@@ -18,7 +18,6 @@ class HudView: UIView{
         view.addSubview(hudView)
         view.isUserInteractionEnabled = false
         
-        //hudView.backgroundColor = UIColor(red: 1, green: 0, blue: 0, alpha: 0.5)
         hudView.show(animated: animated)
         
         return hudView

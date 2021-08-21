@@ -24,9 +24,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     @IBOutlet var addressLabel: UILabel!
     @IBOutlet var tagButton: UIButton!
     @IBOutlet var getButton: UIButton!
-    
     var logoVisible = false
-    
     lazy var logoButton: UIButton = {
         let button = UIButton(type: .custom)
         button.setBackgroundImage(
@@ -52,7 +50,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     
     var timer: Timer?
     
-    // MARK: - Actions
+    // MARK: - Actions Logos
     
     @IBAction func getLocation(){
         
@@ -108,49 +106,49 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         let centerX = view.bounds.midX
         
         let panelMover = CABasicAnimation(keyPath: "position")
-          panelMover.isRemovedOnCompletion = false
-          panelMover.fillMode = CAMediaTimingFillMode.forwards
-          panelMover.duration = 0.6
-          panelMover.fromValue = NSValue(cgPoint: containerView.center)
-          panelMover.toValue = NSValue(
+        panelMover.isRemovedOnCompletion = false
+        panelMover.fillMode = CAMediaTimingFillMode.forwards
+        panelMover.duration = 0.6
+        panelMover.fromValue = NSValue(cgPoint: containerView.center)
+        panelMover.toValue = NSValue(
             cgPoint: CGPoint(x: centerX, y: containerView.center.y))
-          panelMover.timingFunction = CAMediaTimingFunction(
+        panelMover.timingFunction = CAMediaTimingFunction(
             name: CAMediaTimingFunctionName.easeOut)
-          panelMover.delegate = self
-          containerView.layer.add(panelMover, forKey: "panelMover")
-
-          let logoMover = CABasicAnimation(keyPath: "position")
-          logoMover.isRemovedOnCompletion = false
-          logoMover.fillMode = CAMediaTimingFillMode.forwards
-          logoMover.duration = 0.5
-          logoMover.fromValue = NSValue(cgPoint: logoButton.center)
-          logoMover.toValue = NSValue(
+        panelMover.delegate = self
+        containerView.layer.add(panelMover, forKey: "panelMover")
+        
+        let logoMover = CABasicAnimation(keyPath: "position")
+        logoMover.isRemovedOnCompletion = false
+        logoMover.fillMode = CAMediaTimingFillMode.forwards
+        logoMover.duration = 0.5
+        logoMover.fromValue = NSValue(cgPoint: logoButton.center)
+        logoMover.toValue = NSValue(
             cgPoint: CGPoint(x: -centerX, y: logoButton.center.y))
-          logoMover.timingFunction = CAMediaTimingFunction(
+        logoMover.timingFunction = CAMediaTimingFunction(
             name: CAMediaTimingFunctionName.easeIn)
-          logoButton.layer.add(logoMover, forKey: "logoMover")
-
-          let logoRotator = CABasicAnimation(
+        logoButton.layer.add(logoMover, forKey: "logoMover")
+        
+        let logoRotator = CABasicAnimation(
             keyPath: "transform.rotation.z")
-          logoRotator.isRemovedOnCompletion = false
-          logoRotator.fillMode = CAMediaTimingFillMode.forwards
-          logoRotator.duration = 0.5
-          logoRotator.fromValue = 0.0
-          logoRotator.toValue = -2 * Double.pi
-          logoRotator.timingFunction = CAMediaTimingFunction(
+        logoRotator.isRemovedOnCompletion = false
+        logoRotator.fillMode = CAMediaTimingFillMode.forwards
+        logoRotator.duration = 0.5
+        logoRotator.fromValue = 0.0
+        logoRotator.toValue = -2 * Double.pi
+        logoRotator.timingFunction = CAMediaTimingFunction(
             name: CAMediaTimingFunctionName.easeIn)
-          logoButton.layer.add(logoRotator, forKey: "logoRotator")
-
+        logoButton.layer.add(logoRotator, forKey: "logoRotator")
+        
     }
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-      containerView.layer.removeAllAnimations()
-      containerView.center.x = view.bounds.size.width / 2
-      containerView.center.y = 40 + containerView.bounds.size.height / 2
-      logoButton.layer.removeAllAnimations()
-      logoButton.removeFromSuperview()
+        containerView.layer.removeAllAnimations()
+        containerView.center.x = view.bounds.size.width / 2
+        containerView.center.y = 40 + containerView.bounds.size.height / 2
+        logoButton.layer.removeAllAnimations()
+        logoButton.removeFromSuperview()
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateLabels()
